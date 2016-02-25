@@ -14,7 +14,9 @@ $ git clone git@github.com:ItsMeAra/dotfiles.git
 
 
 **2. Install brew.txt by running:**  
-`$ cat brew.txt | xargs brew install`
+```
+$ cat brew.txt | xargs brew install
+```
 
 
 
