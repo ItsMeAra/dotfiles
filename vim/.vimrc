@@ -1,6 +1,7 @@
 " Frankly, I rarely use vim and I don't understand a god damn thing in here.
 " Hopefully my good friend Sarkis (https://github.com/sarkis/), 
 " who I took this from, can explain to me what is going on here someday. Haha
+" OK I lied, I understand some of it, but still, this shit is crazy.
 " ============================================================================
 
 set nocompatible
