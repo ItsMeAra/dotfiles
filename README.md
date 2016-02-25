@@ -1,7 +1,5 @@
 # dotfiles
-Yep, you guessed it. These are my dotfiles. I manage them via [GNU Stow](https://www.gnu.org/software/stow/). Stow is cool. Be like Stow.
-
-Stow is installed via [Homebrew](http://brew.sh/) in step 2. Homebrew is great. Be like Homebrew.
+Yep, you guessed it. These are my dotfiles. I manage them via [GNU Stow](https://www.gnu.org/software/stow/). Stow is cool, be like Stow. Stow is installed via [Homebrew](http://brew.sh/) in step 2. Homebrew is great, be like Homebrew.
 
 
 
@@ -29,3 +27,7 @@ $ stow bash
 $ stow git
 $ stow vim
 ```
+
+And just like that...  
+
+![Dassit](http://i.giphy.com/VHngktboAlxHW.gif)
