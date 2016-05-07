@@ -32,6 +32,13 @@ $ stow git
 $ stow vim
 ```
 
+
+**5. Install software in brew-cask.txt by running:**  
+```
+$ cat brew-cask.txt | xargs brew cask install
+```
+
+
 And just like that...  
 
 ![Dassit](http://i.giphy.com/VHngktboAlxHW.gif)
