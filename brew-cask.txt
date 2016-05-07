@@ -1,0 +1,5 @@
+adium
+atom
+firefox
+google-chrome
+vlc
