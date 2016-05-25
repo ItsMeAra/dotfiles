@@ -1,4 +1,13 @@
 atom
+chromecast
 firefox
+github
 google-chrome
+sketch
+spotify
+spotify-notifications
+sublime-text
+vagrant
+virtualbox
 vlc
+webstorm
