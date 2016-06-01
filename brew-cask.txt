@@ -3,6 +3,7 @@ chromecast
 firefox
 github
 google-chrome
+imageoptim
 sketch
 spotify
 spotify-notifications
