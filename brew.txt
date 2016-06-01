@@ -16,3 +16,4 @@ terminal-notifier
 vim
 wget
 zsh
+z
