@@ -50,7 +50,7 @@ export PS1="\n\[$(tput bold)\]\[$(tput setaf 5)\]➜ \[$(tput setaf 6)\]\w\[$(tp
 
 export PATH=/opt/local/bin:/opt/local/sbin:${PATH}
 # export PATH=/usr/local/bin:$PATH
-
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 
 # ###########################################################
