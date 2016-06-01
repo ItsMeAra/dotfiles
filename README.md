@@ -20,6 +20,10 @@ $ git clone git@github.com:ItsMeAra/dotfiles.git
 
 **3. Install brew.txt by running:**  
 ```
+# to maintain cask ....
+# brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup`
+
+$ brew tap caskroom/versions
 $ cat brew.txt | xargs brew install
 ```
 
