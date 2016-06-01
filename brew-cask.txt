@@ -4,6 +4,7 @@ firefox
 github
 google-chrome
 imageoptim
+iterm2
 sketch
 spotify
 spotify-notifications
