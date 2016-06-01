@@ -50,6 +50,8 @@ export PS1="\n\[$(tput bold)\]\[$(tput setaf 5)\]➜ \[$(tput setaf 6)\]\w\[$(tp
 
 export PATH=/opt/local/bin:/opt/local/sbin:${PATH}
 # export PATH=/usr/local/bin:$PATH
+
+# Add rbenv to bash so that it loads every time you open a terminal
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 
