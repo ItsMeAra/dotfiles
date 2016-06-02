@@ -51,11 +51,11 @@ export PS1="\n\[$(tput bold)\]\[$(tput setaf 5)\]➜ \[$(tput setaf 6)\]\w\[$(tp
 export PATH=/opt/local/bin:/opt/local/sbin:${PATH}
 # export PATH=/usr/local/bin:$PATH
 
-# Add rbenv to bash so that it loads every time you open a terminal
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
+# Sometimes setting the global Ruby version with rbenv doesn't work.
+# This fixes that. 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
 
 
 # ###########################################################
@@ -83,9 +83,9 @@ alias myip="curl http://ipecho.net/plain; echo"
 ## Shortcuts
 ## #################################################
 
-alias editgit='st ~/.gitconfig'
-alias editbash='st ~/.bash_profile'
-alias resource='source ~/.bash_profile && echo "Done!"'
+alias edit_git='st ~/.gitconfig'
+alias edit_bash='st ~/.bash_profile'
+alias resource='source ~/.bash_profile && echo "All done master Bruce!"'
 alias sites='cd ~/Sites'
 alias ghub='cd ~/Github-repos'
 alias bbucket='cd ~/Bitbucket-repos'
@@ -132,17 +132,48 @@ alias ios='open /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.
 # `cat` with beautiful colors. requires: sudo easy_install -U Pygments
 alias pcat='pygmentize -O style=monokai -f console256 -g'
 
-# Empty the Trash on all mounted volumes and the main HDD. 
-# then clear the useless sleepimage
-alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash; sudo rm /private/var/vm/sleepimage"
-
 # Update installed Ruby gems, Homebrew, npm, and their 
 # installed packages
 alias brew_update="brew -v update; brew -v upgrade --all; brew cleanup; brew cask cleanup; brew prune; brew doctor"
 
 # Updates brew, npm, gem
-alias updateallthethings='brew_update; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update --no-rdoc --no-ri'
+# alias updateallthethings='brew_update; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update --no-rdoc --no-ri'
+
+# Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
+alias update_errthang='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update'
+
+# IP addresses
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="ipconfig getifaddr en0"
+alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
 
 # Recursively delete `.DS_Store` files
 alias cleanup_dsstore="find . -name '*.DS_Store' -type f -ls -delete"
+
+# Disable Spotlight
+alias spotoff="sudo mdutil -a -i off"
+
+# Enable Spotlight
+alias spoton="sudo mdutil -a -i on"
+
+# Stopwatch
+alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
+
+# Empty the Trash on all mounted volumes and the main HDD. 
+# then clear the useless sleepimage
+alias empty_trash="sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash; sudo rm /private/var/vm/sleepimage"
+
+# Empty the Trash on all mounted volumes and the main HDD.
+# Also, clear Apple’s System Logs to improve shell startup speed.
+# Finally, clear download history from quarantine. https://mths.be/bum
+alias secure_empty_trash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"
+
+
+
+# ###########################################################
+# Other Stuff
+# ###########################################################
+
+# Add rbenv to bash so that it loads every time you open a terminal
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
