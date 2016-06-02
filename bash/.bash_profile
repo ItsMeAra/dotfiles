@@ -54,6 +54,9 @@ export PATH=/opt/local/bin:/opt/local/sbin:${PATH}
 # Add rbenv to bash so that it loads every time you open a terminal
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
 
 # ###########################################################
 # Aliases
