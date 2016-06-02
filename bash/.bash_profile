@@ -148,13 +148,13 @@ alias localip="ipconfig getifaddr en0"
 alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
 
 # Recursively delete `.DS_Store` files
-alias cleanup_dsstore="find . -name '*.DS_Store' -type f -ls -delete"
+alias cleanup_dsstore="find . -name '*.DS_Store' -type f -ls -delete && echo 'All done master Bruce!'"
 
 # Disable Spotlight
-alias spotoff="sudo mdutil -a -i off"
+alias spotoff="sudo mdutil -a -i off && echo 'Spotlight is off master Bruce!'"
 
 # Enable Spotlight
-alias spoton="sudo mdutil -a -i on"
+alias spoton="sudo mdutil -a -i on && echo 'Spotlight is on master Bruce!'"
 
 # Stopwatch
 alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'

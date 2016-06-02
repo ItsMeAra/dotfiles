@@ -1,4 +1,4 @@
-brew-cask-completion
+brew-cask
 cask
 docker
 git

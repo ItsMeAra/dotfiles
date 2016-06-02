@@ -22,9 +22,10 @@ $ git clone git@github.com:ItsMeAra/dotfiles.git
 ```
 # to maintain cask ....
 # brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup`
-# brew tap caskroom/versions
 
+$ brew tap caskroom/cask
 $ cat brew.txt | xargs brew install
+$ brew tap caskroom/versions
 ```
 
 
