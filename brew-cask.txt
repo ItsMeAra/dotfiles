@@ -1,5 +1,4 @@
 atom
-chromecast
 firefox
 github
 google-chrome
