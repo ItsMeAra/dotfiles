@@ -18,7 +18,7 @@ $ git clone git@github.com:ItsMeAra/dotfiles.git
 ```
 
 
-**3. Install brew.txt by running:**  
+**3. Install brew.txt**  
 ```
 # to maintain cask ....
 # brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup`
@@ -34,13 +34,20 @@ $ brew tap caskroom/versions
 $ cd ~/dotfiles
 $ stow bash
 $ stow git
+$ stow osx
 $ stow vim
 ```
 
 
-**5. Install software in brew-cask.txt by running:**  
+**5. Install software in brew-cask.txt**  
 ```
 $ cat brew-cask.txt | xargs brew cask install
+```
+
+
+**6. Install osx defaults**  
+```
+$ ~/osx/.osx
 ```
 
 
