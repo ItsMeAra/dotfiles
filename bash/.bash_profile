@@ -96,12 +96,13 @@ alias bbucket='cd ~/Bitbucket-repos'
 
 alias glog='git log'
 alias gdiff='git diff'
-alias gbranch='git branch'
-alias gstat='git status'
-alias gfetch='git fetch'
-alias gadd='git add -all'
-alias gpush='git push origin head'
-alias gpull='git pull'
+alias branch='git branch'
+alias status='git status'
+alias fetch='git fetch'
+alias add='git add --all'
+alias commit='git commit -am'
+alias push='git push origin head'
+alias pull='git pull'
 # Undo a `git push`
 alias undopush="git push -f origin HEAD^:master"
 

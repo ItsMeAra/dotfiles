@@ -1,4 +1,5 @@
 atom
+dropbox
 firefox
 github
 google-chrome
@@ -7,7 +8,7 @@ iterm2
 sketch
 spotify
 spotify-notifications
-sublime-text
+sublime-text3
 vagrant
 virtualbox
 vlc
