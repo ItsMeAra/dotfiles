@@ -177,3 +177,5 @@ alias secure_empty_trash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Tras
 # Add rbenv to bash so that it loads every time you open a terminal
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
