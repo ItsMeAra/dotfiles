@@ -77,7 +77,8 @@ alias .4='cd ../../../../'
 alias .5='cd ../../../../../'
 alias mkdir="mkdir -pv"
 alias wget="wget -c"
-alias myip="curl http://ipecho.net/plain; echo"
+# alias myip="curl http://ipecho.net/plain; echo"
+alias c='clear'
 
 
 ## Shortcuts
@@ -103,6 +104,7 @@ alias add='git add --all'
 alias commit='git commit -am'
 alias push='git push origin head'
 alias pull='git pull'
+alias co='check out'
 # Undo a `git push`
 alias undopush="git push -f origin HEAD^:master"
 
