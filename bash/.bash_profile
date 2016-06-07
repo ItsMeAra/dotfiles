@@ -79,6 +79,7 @@ alias mkdir="mkdir -pv"
 alias wget="wget -c"
 # alias myip="curl http://ipecho.net/plain; echo"
 alias c='clear'
+alias cprsa='pbcopy < ~/.ssh/id_rsa.pub'
 
 
 ## Shortcuts
