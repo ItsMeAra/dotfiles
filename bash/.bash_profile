@@ -98,16 +98,16 @@ alias bbucket='cd ~/Bitbucket-repos'
 
 alias glog='git log'
 alias gdiff='git diff'
-alias branch='git branch'
-alias status='git status'
-alias fetch='git fetch'
-alias add='git add --all'
-alias commit='git commit -am'
-alias push='git push origin head'
-alias pull='git pull'
+alias gbr='git branch'
+alias gstat='git status'
+alias gf='git fetch'
+alias ga='git add --all'
+alias gc='git commit -am'
+alias gpush='git push origin head'
+alias gpull='git pull'
 alias co='check out'
 # Undo a `git push`
-alias undopush="git push -f origin HEAD^:master"
+alias undo_push="git push -f origin HEAD^:master"
 
 
 ### Git branch switching
