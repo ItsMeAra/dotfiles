@@ -89,8 +89,10 @@ alias edit_git='st ~/.gitconfig'
 alias edit_bash='st ~/.bash_profile'
 alias resource='source ~/.bash_profile && echo "All done master Bruce!"'
 alias sites='cd ~/Sites'
-alias ghub='cd ~/Github-repos'
-alias bbucket='cd ~/Bitbucket-repos'
+alias ghub='cd ~/Github'
+alias bbucket='cd ~/Bitbucket'
+alias bbucket='cd ~/Bitbucket'
+alias mdocs='cd /Applications/MAMP/htdocs/'
 
 
 ## Git commands

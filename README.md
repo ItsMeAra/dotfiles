@@ -45,7 +45,13 @@ $ cat brew-cask.txt | xargs brew cask install
 ```
 
 
-**6. Install osx defaults**  
+**6. Install global npm packages in npm.txt**  
+```
+$ cat npm.txt | xargs npm install -g
+```
+
+
+**7. Install osx defaults**  
 ```
 $ ~/osx/.osx
 ```
