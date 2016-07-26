@@ -59,4 +59,4 @@ $ ~/osx/.osx
 
 And just like that...  
 
-![Dassit](http://i.giphy.com/VHngktboAlxHW.gif)
+![Dassit](http://i.imgur.com/YsbKHg1.gif)
