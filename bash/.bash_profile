@@ -1,6 +1,6 @@
-# In case you feel like moving all of this to .bashrc, 
+# In case you feel like moving all of this to .bashrc,
 # uncomment this:
-# 
+#
 # if [ -f ~/.bashrc ]; then
 #    source ~/.bashrc
 # fi
@@ -12,7 +12,7 @@
 # Load our dotfiles like ~/.bash_prompt, etc…
 #   ~/.extra can be used for settings you don’t want to commit,
 #   Use it to configure your PATH, thus it being first in line.
-# 
+#
 # for file in ~/.{extra,bash_prompt,exports,aliases,functions}; do
 #     [ -r "$file" ] && source "$file"
 # done
@@ -52,7 +52,7 @@ export PATH=/opt/local/bin:/opt/local/sbin:${PATH}
 # export PATH=/usr/local/bin:$PATH
 
 # Sometimes setting the global Ruby version with rbenv doesn't work.
-# This fixes that. 
+# This fixes that.
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
@@ -66,6 +66,7 @@ eval "$(rbenv init -)"
 ## #################################################
 
 alias sub='open -a "Sublime Text"'
+alias atm='open -a "Atom"'
 alias home="cd ~/"
 alias ll="ls -lhA"
 alias ls="ls -CF"
@@ -91,8 +92,7 @@ alias resource='source ~/.bash_profile && echo "All done master Bruce!"'
 alias sites='cd ~/Sites'
 alias ghub='cd ~/Github'
 alias bbucket='cd ~/Bitbucket'
-alias bbucket='cd ~/Bitbucket'
-alias mdocs='cd /Applications/MAMP/htdocs/'
+alias mhtdocs='cd /Applications/MAMP/htdocs/'
 
 
 ## Git commands
@@ -103,7 +103,7 @@ alias gdiff='git diff'
 alias gbr='git branch'
 alias gstat='git status'
 alias gf='git fetch'
-alias ga='git add --all'
+alias gaa='git add --all'
 alias gc='git commit -am'
 alias gpush='git push origin head'
 alias gpull='git pull'
@@ -138,7 +138,7 @@ alias ios='open /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.
 # `cat` with beautiful colors. requires: sudo easy_install -U Pygments
 alias pcat='pygmentize -O style=monokai -f console256 -g'
 
-# Update installed Ruby gems, Homebrew, npm, and their 
+# Update installed Ruby gems, Homebrew, npm, and their
 # installed packages
 alias brew_update="brew -v update; brew -v upgrade --all; brew cleanup; brew cask cleanup; brew prune; brew doctor"
 
@@ -165,7 +165,7 @@ alias spoton="sudo mdutil -a -i on && echo 'Spotlight is on master Bruce!'"
 # Stopwatch
 alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
 
-# Empty the Trash on all mounted volumes and the main HDD. 
+# Empty the Trash on all mounted volumes and the main HDD.
 # then clear the useless sleepimage
 alias empty_trash="sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash; sudo rm /private/var/vm/sleepimage"
 
