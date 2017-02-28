@@ -29,6 +29,13 @@ parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
+# Shows what changed/added files from your branch compared to master
+# Usage:
+# $ daChanges myBranch
+daChanges() {
+    git diff --name-status master..$1
+}
+
 ## Make directory then cd into it.
 mcd () {
     mkdir -p $1
@@ -49,7 +56,7 @@ mcd () {
 export PS1="\n\[$(tput bold)\]\[$(tput setaf 5)\]➜ \[$(tput setaf 6)\]\w\[$(tput setaf 3)\]\$(parse_git_branch) \[$(tput sgr0)\]"
 
 export PATH=/opt/local/bin:/opt/local/sbin:${PATH}
-# export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/bin:$PATH
 
 # Sometimes setting the global Ruby version with rbenv doesn't work.
 # This fixes that.
@@ -66,7 +73,7 @@ eval "$(rbenv init -)"
 ## #################################################
 
 alias sub='open -a "Sublime Text"'
-alias atm='open -a "Atom"'
+alias opnatom='open -a "Atom"'
 alias home="cd ~/"
 alias ll="ls -lhA"
 alias ls="ls -CF"
@@ -86,13 +93,13 @@ alias cprsa='pbcopy < ~/.ssh/id_rsa.pub'
 ## Shortcuts
 ## #################################################
 
-alias edit_git='st ~/.gitconfig'
-alias edit_bash='st ~/.bash_profile'
+alias edit_git='atom ~/.gitconfig'
+alias edit_bash='atom ~/.bash_profile'
 alias resource='source ~/.bash_profile && echo "All done master Bruce!"'
 alias sites='cd ~/Sites'
 alias ghub='cd ~/Github'
 alias bbucket='cd ~/Bitbucket'
-alias mhtdocs='cd /Applications/MAMP/htdocs/'
+alias mdocs='cd /Applications/MAMP/htdocs/'
 
 
 ## Git commands
@@ -101,22 +108,42 @@ alias mhtdocs='cd /Applications/MAMP/htdocs/'
 alias glog='git log'
 alias gdiff='git diff'
 alias gbr='git branch'
+alias newbranch='git checkout -b'
+alias delbranch='git branch -d'
+alias namebranch='git branch -m'
 alias gstat='git status'
 alias gf='git fetch'
-alias gaa='git add --all'
-alias gc='git commit -am'
+alias gadd='git add --all'
+alias gcom='git commit -am'
+alias gaddcom='git add . && git commit -am'
 alias gpush='git push origin head'
-alias gpull='git pull'
-alias co='check out'
+alias gpull='git pull origin head'
+alias gpmast='git push origin master'
+alias gplmast='git pull origin master'
+alias gmerge='git merge --no-ff'
+# alias co='check out'
 # Undo a `git push`
-alias undo_push="git push -f origin HEAD^:master"
+alias fml="git push -f origin HEAD^:master"
+alias fuckit="git reset --hard"
+alias update_master='git checkout master && gplmast'
+
+# To delete all local branches that are already merged into the currently
+# checked out branch:
+alias clean_branches='git branch --merged | grep -v "\*" | grep -v master | grep -v develop | xargs -n 1 git branch -d'
+
+# To delete all local branches that are already merged into master:
+alias clean_branches_master='git branch --merged master | grep -v "^\*\|  master" | xargs -n 1 git branch -d'
+
+# To delete all branches on remote that are already merged:
+alias clean_branches_remote='git branch -r --merged | grep -v master | sed "s/origin\///" | xargs -n 1 git push --delete origin'
 
 
 ### Git branch switching
 ### #######################################
 
-alias master='git co master'
-alias ghp='git co gh-pages'
+alias master='git checkout master'
+alias ghp='git checkout gh-pages'
+alias gitback='git checkout -'
 
 
 ## Server guick starts

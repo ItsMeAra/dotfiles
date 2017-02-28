@@ -2,4 +2,5 @@ grunt
 gulp
 node-static
 surge
+vue-cli
 yo

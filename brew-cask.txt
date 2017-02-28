@@ -6,8 +6,6 @@ google-chrome
 imageoptim
 iterm2
 sketch
-spotify
-spotify-notifications
 sublime-text3
 vagrant
 virtualbox
