@@ -1,13 +1,7 @@
 atom
-dropbox
 firefox
 github
 google-chrome
 imageoptim
 iterm2
-sketch
-sublime-text3
-vagrant
 virtualbox
-vlc
-webstorm
