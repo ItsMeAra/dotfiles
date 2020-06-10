@@ -6,7 +6,6 @@ libffi
 libksba
 libyaml
 neon
-node
 python
 rbenv
 ruby-build

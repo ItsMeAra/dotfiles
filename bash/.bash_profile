@@ -1,3 +1,4 @@
+source ~/.profile
 # In case you feel like moving all of this to .bashrc,
 # uncomment this:
 #
@@ -58,12 +59,22 @@ export PS1="\n\[$(tput bold)\]\[$(tput setaf 5)\]➜ \[$(tput setaf 6)\]\w\[$(tp
 export PATH=/opt/local/bin:/opt/local/sbin:${PATH}
 export PATH=/usr/local/bin:$PATH
 
+export PATH=/Applications/MAMP/bin/php/php7.2.8/bin:$PATH
+
 # Sometimes setting the global Ruby version with rbenv doesn't work.
 # This fixes that.
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+export NVM_DIR="/Users/aabcarians/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+# export NVM_DIR="$HOME/.nvm"
+# . "/usr/local/opt/nvm/nvm.sh"
+#
+# export NVM_DIR=~/.nvm
+# source $(brew --prefix nvm)/nvm.sh
 
 # ###########################################################
 # Aliases
@@ -72,6 +83,7 @@ eval "$(rbenv init -)"
 ## General
 ## #################################################
 
+alias phpmamp='/Applications/MAMP/bin/php/php7.2.8/bin/php'
 alias sub='open -a "Sublime Text"'
 alias opnatom='open -a "Atom"'
 alias home="cd ~/"
@@ -167,7 +179,7 @@ alias pcat='pygmentize -O style=monokai -f console256 -g'
 
 # Update installed Ruby gems, Homebrew, npm, and their
 # installed packages
-alias brew_update="brew -v update; brew -v upgrade --all; brew cleanup; brew cask cleanup; brew prune; brew doctor"
+alias brew_update="brew -v update; brew -v upgrade; brew cleanup; brew cask cleanup; brew prune; brew doctor"
 
 # Updates brew, npm, gem
 # alias updateallthethings='brew_update; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update --no-rdoc --no-ri'
@@ -212,3 +224,8 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+# BEGIN SNIPPET: Platform.sh CLI configuration
+HOME=${HOME:-'/Users/aabcarians'}
+export PATH="$HOME/"'.platformsh/bin':"$PATH"
+if [ -f "$HOME/"'.platformsh/shell-config.rc' ]; then . "$HOME/"'.platformsh/shell-config.rc'; fi # END SNIPPET

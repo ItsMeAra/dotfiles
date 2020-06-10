@@ -35,3 +35,5 @@
 
 [github]
     user = itsmeara
+[http]
+	postBuffer = 157286400
