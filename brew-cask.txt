@@ -5,6 +5,5 @@ google-chrome
 imageoptim
 iterm2
 sketch
-vagrant
-virtualbox
+visual-studio-code
 vlc

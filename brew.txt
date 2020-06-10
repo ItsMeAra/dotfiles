@@ -10,7 +10,6 @@ python
 rbenv
 ruby-build
 stow
-subversion
 terminal-notifier
 vim
 wget

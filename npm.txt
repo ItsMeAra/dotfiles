@@ -1,3 +1,4 @@
+gulp-cli
 node-static
 surge
 vue-cli

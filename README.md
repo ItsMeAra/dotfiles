@@ -14,7 +14,7 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 **2. Clone this repo**  
 ```
 $ cd ~/
-$ git clone git@github.com:ItsMeAra/dotfiles.git
+$ git clone --depth=1 git@github.com:ItsMeAra/dotfiles.git
 ```
 
 
@@ -59,4 +59,4 @@ $ ~/.osx
 
 And just like that...  
 
-![Dassit](http://i.imgur.com/YsbKHg1.gif)
+![Dassit](https://media.giphy.com/media/l0IyczK2hyezd4Avu/giphy.gif)
