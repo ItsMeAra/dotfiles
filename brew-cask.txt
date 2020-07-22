@@ -1,7 +1,5 @@
-atom
 firefox
 github
-google-chrome
 imageoptim
 iterm2
 sketch
