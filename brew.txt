@@ -14,5 +14,3 @@ terminal-notifier
 vim
 wget
 yarn
-zsh
-z
