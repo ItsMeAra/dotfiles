@@ -5,6 +5,7 @@ git
 libffi
 libksba
 libyaml
+micro
 neon
 python
 rbenv
