@@ -1,4 +1,3 @@
-acorn
 firefox
 github
 handbrake
