@@ -4,5 +4,5 @@ netlify-cli
 node-static
 np
 surge
+vercel
 vue-cli
-yo
