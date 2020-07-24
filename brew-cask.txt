@@ -1,7 +1,9 @@
+acorn
 firefox
 github
 imageoptim
 iterm2
+mamp
 sketch
 visual-studio-code
 vlc
