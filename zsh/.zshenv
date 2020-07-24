@@ -12,7 +12,7 @@ export PS1="\n\[$(tput bold)\]\[$(tput setaf 5)\]➜ \[$(tput setaf 6)\]\w\[$(tp
 export PATH=/opt/local/bin:/opt/local/sbin:${PATH}
 export PATH=/usr/local/bin:$PATH
 
-export PATH=/Applications/MAMP/bin/php/php7.2.8/bin:$PATH
+# export PATH=/Applications/MAMP/bin/php/php7.2.8/bin:$PATH
 
 # Sometimes setting the global Ruby version with rbenv doesn't work.
 # This fixes that.
