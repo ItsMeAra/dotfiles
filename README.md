@@ -32,10 +32,9 @@ $ brew tap caskroom/versions
 **4. Setup Symlinks via Stow**  
 ```
 $ cd ~/dotfiles
-$ stow bash
+$ stow zsh
 $ stow git
 $ stow osx
-$ stow vim
 ```
 
 
