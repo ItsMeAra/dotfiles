@@ -15,22 +15,20 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 ```
 $ cd ~/
 $ git clone --depth=1 git@github.com:ItsMeAra/dotfiles.git
+$ cd dotfiles/
 ```
 
 
-**3. Install brew.txt**  
+**3. Install Homebrew Formulae from brew.txt**  
 ```
-# to maintain cask ....
-# brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup`
-
 $ cat brew.txt | xargs brew install
-$ brew tap caskroom/versions
 ```
 
 
 **4. Setup Symlinks via Stow**  
 ```
 $ cd ~/dotfiles
+$ stow bash
 $ stow zsh
 $ stow git
 $ stow osx
@@ -51,7 +49,7 @@ $ cat npm.txt | xargs npm install -g
 
 **7. Install osx defaults**  
 ```
-$ ~/.osx
+$ source ~/.osx
 ```
 
 
