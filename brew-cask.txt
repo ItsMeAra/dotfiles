@@ -1,9 +1,5 @@
-firefox
-github
 handbrake
 imageoptim
 iterm2
 mamp
-sketch
 visual-studio-code
-vlc
