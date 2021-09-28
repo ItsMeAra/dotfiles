@@ -1,7 +1,7 @@
+gatsby-cli
 gulp-cli
 http-server
 netlify-cli
-node-static
 np
 surge
 vercel
