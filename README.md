@@ -37,7 +37,7 @@ $ stow osx
 
 **5. Install software in brew-cask.txt**  
 ```
-$ cat brew-cask.txt | xargs brew cask install
+$ cat brew-cask.txt | xargs brew install --cask
 ```
 
 
