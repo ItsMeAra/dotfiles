@@ -7,7 +7,7 @@ Yep, these are my dotfiles. I manage them via [GNU Stow](https://www.gnu.org/sof
 
 **1. Install Homebrew by running:**  
 ```
-$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 
