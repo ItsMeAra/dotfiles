@@ -31,7 +31,6 @@ $ cd ~/dotfiles
 $ stow bash
 $ stow zsh
 $ stow git
-$ stow osx
 ```
 
 
