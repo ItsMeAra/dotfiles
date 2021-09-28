@@ -2,6 +2,7 @@ brew-cask
 cask
 docker
 git
+gh
 libffi
 libksba
 libyaml
