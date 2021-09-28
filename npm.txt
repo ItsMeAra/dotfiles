@@ -5,4 +5,4 @@ netlify-cli
 np
 surge
 vercel
-vue-cli
+@vue/cli
