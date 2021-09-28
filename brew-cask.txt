@@ -2,4 +2,5 @@ handbrake
 imageoptim
 iterm2
 mamp
+signal
 visual-studio-code
