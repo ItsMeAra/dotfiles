@@ -47,11 +47,6 @@ $ cat npm.txt | xargs npm install -g
 ```
 
 
-**7. Install osx defaults**  
-```
-$ source ~/.osx
-```
-
 
 And just like that...  
 
