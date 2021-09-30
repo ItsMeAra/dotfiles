@@ -1,4 +1,5 @@
 gatsby-cli
+@gridsome/cli
 gulp-cli
 http-server
 netlify-cli
@@ -6,3 +7,4 @@ np
 surge
 vercel
 @vue/cli
+yarn
