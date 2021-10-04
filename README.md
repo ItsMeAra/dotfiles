@@ -45,6 +45,21 @@ $ cat brew-cask.txt | xargs brew install --cask
 $ cat npm.txt | xargs npm install -g
 ```
 
+This will install the following packages:
+
+```
+gatsby-cli
+@gridsome/cli
+gulp-cli
+http-server
+netlify-cli
+np - https://www.npmjs.com/package/np
+surge
+vercel
+@vue/cli
+yarn
+```
+
 
 
 And just like that...  
