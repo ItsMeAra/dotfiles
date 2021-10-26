@@ -5,6 +5,7 @@ http-server
 netlify-cli
 np
 surge
+svelte-cli
 vercel
 @vue/cli
 yarn
