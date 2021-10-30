@@ -2,13 +2,6 @@
   name = Ara Abcarians
   email = arala22@gmail.com
 
-[alias]
-  co = checkout
-  ci = commit -am
-  st = status -s
-  br = branch
-  branches = branch
-
 [color]
     ui = auto
   [color "branch"]
@@ -36,4 +29,4 @@
 [github]
     user = itsmeara
 [http]
-	postBuffer = 157286400
+    postBuffer = 157286400
