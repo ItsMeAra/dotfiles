@@ -1,3 +1,7 @@
+brave-browser
+discord
+firefox
+google-chrome
 handbrake
 imageoptim
 iterm2
