@@ -1,3 +1,4 @@
+craftcms/nitro/nitro
 docker
 git
 gh
