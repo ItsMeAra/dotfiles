@@ -1,5 +1,6 @@
 brave-browser
 discord
+docker
 firefox
 google-chrome
 handbrake
@@ -10,3 +11,4 @@ mamp
 notion
 signal
 visual-studio-code
+zoom
