@@ -111,3 +111,12 @@ alias garbageday="sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash; sudo rm /p
 # Finally, clear download history from quarantine. https://mths.be/bum
 alias trashday="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"
 
+
+# ###########################################################
+# Other
+# ###########################################################
+
+# load rbenv if available
+if which rbenv &>/dev/null ; then
+  eval "$(rbenv init - --no-rehash)"
+fi
