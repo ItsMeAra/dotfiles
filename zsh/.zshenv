@@ -16,10 +16,14 @@ export PATH=/usr/local/bin:$PATH
 
 # Sometimes setting the global Ruby version with rbenv doesn't work.
 # This fixes that.
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+# export PATH="$HOME/.rbenv/bin:$PATH"
+# eval "$(rbenv init -)"
 
-# if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+# load rbenv if available
+if which rbenv &>/dev/null ; then
+  eval "$(rbenv init - --no-rehash)"
+fi
+
 
 export NVM_DIR="/Users/aabcarians/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
