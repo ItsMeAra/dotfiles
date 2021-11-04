@@ -88,6 +88,9 @@ alias brewup="brew -v update; brew -v upgrade; brew cleanup; brew cask cleanup; 
 # Updates brew, npm, gem
 # alias updateall='brew_update; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update --no-rdoc --no-ri'
 
+# Update NPM & global packages
+alias updatenpm="npm install -g npm@latest; npm update -g"
+
 # Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
 alias updateall='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup; npm install -g npm@latest; npm update -g; sudo gem update --system; sudo gem update'
 
