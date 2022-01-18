@@ -29,7 +29,7 @@ $ cat brew.txt | xargs brew install
 ```
 $ cd ~/dotfiles
 $ stow bash
-$ stow zsh
+$ stow zsh (do this after installing oh my zsh)
 $ stow git
 ```
 
