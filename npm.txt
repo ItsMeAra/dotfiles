@@ -1,12 +1,10 @@
 degit
 gatsby-cli
 @gridsome/cli
-gulp-cli
 http-server
 netlify-cli
 np
 @sanity/client
-surge
 svelte-cli
 vercel
 @vue/cli
