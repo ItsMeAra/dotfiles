@@ -1,7 +1,5 @@
 appcleaner
-brave-browser
 discord
-docker
 firefox
 google-chrome
 handbrake
