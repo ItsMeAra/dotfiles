@@ -1,6 +1,5 @@
 bat
-craftcms/nitro/nitro
-docker
+deno
 git
 gh
 libffi
