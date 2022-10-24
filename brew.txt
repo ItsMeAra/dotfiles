@@ -5,7 +5,6 @@ gh
 libffi
 libksba
 libyaml
-micro
 neon
 python
 rbenv
@@ -15,3 +14,4 @@ terminal-notifier
 tree
 vim
 wget
+yarn
