@@ -10,6 +10,11 @@ Yep, these are my dotfiles. I manage them via [GNU Stow](https://www.gnu.org/sof
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
+### Secure Git(Hub) access  
+[https://cli.github.com/manual/](https://cli.github.com/manual/). 
+- Run `brew install gh`
+- Run `gh auth login`
+
 
 **2. Clone this repo**  
 ```
