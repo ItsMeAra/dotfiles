@@ -1,7 +1,6 @@
 bat
 deno
 git
-gh
 libffi
 libksba
 libyaml
