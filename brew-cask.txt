@@ -5,9 +5,7 @@ google-chrome
 handbrake
 imageoptim
 iterm2
-local
 mamp
 notion
 signal
 visual-studio-code
-zoom
