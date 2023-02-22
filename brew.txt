@@ -1,6 +1,5 @@
 bat
 deno
-gh
 git
 libffi
 libksba
