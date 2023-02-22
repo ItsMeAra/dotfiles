@@ -13,4 +13,3 @@ terminal-notifier
 tree
 vim
 wget
-yarn
