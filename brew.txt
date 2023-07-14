@@ -1,15 +1,11 @@
 bat
 deno
 git
-libffi
-libksba
-libyaml
+gh
 neon
-python
 rbenv
-ruby-build
 stow
-terminal-notifier
 tree
 vim
 wget
+yarn
