@@ -9,3 +9,11 @@ mamp
 notion
 signal
 visual-studio-code
+zoom
+droplr
+little-snitch
+figma
+1password
+vlc
+switchhosts
+spotify
