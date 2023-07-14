@@ -10,7 +10,6 @@ cat brew.txt | xargs brew install
 
 zsh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-stow bash
 stow zsh
 stow git
 
