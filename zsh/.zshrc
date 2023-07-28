@@ -117,6 +117,7 @@ alias gpullmain='git pull origin main'
 alias gmerge='git merge --no-ff'
 alias co='check out'
 alias gco='git checkout'
+alias gempty='git commit --allow-empty -m "Trigger deploy"'
 # Undo a git push
 alias fml='git push -f origin HEAD^:master'
 alias fmlmain='git push -f origin HEAD^:main'
