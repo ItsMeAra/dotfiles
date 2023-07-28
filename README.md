@@ -33,7 +33,6 @@ $ cat brew.txt | xargs brew install
 **4. Setup Symlinks via Stow**  
 ```
 $ cd ~/dotfiles
-$ stow bash
 $ stow zsh (do this after installing oh my zsh)
 $ stow git
 ```
